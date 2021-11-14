@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="leftDiv">
+            <div id="leftData">
+                <h2 id="score">Score 0/8</h2>
+                <h3 id="answer">11 bats</h3>
+                <button onclick="thumbsUp()" class="btn">👍</button>
+                <button onclick="thumbsDown()" class="btn">👎</button>
+            </div>
+        </div>
+        <div class="rightDiv">
+            <div class="before-start">
+                <h3>Welcome to the <i>Number Match</i> game</h3>
+                <li>the rules are simple</li>
+                <p>👍Hit thumb up when the number on left</p>
+                <p>👎Hit thumb down when it is not a match.</p>
+
+                <small>You have 3 second to decide</small>
+                <br>
+                <button onclick="startGame()" class="btn">Play</button>
+            </div>
+            <img id="itemImage" />
+            <h1 id="finalScore"></h1>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
